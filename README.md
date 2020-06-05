@@ -1,6 +1,6 @@
 # SeleniumStoreAutomation
 Test automation project in Selenium (Java) for e-commerce website
-Test scenarios covering authentication, display, navigation and full order process.
+Test scenarios covering authentication, display, navigation and full ordering process.
 
 To run this project on your machine:
 1. Import this project into Eclipse
