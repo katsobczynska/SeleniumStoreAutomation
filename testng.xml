@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<test name="Testing Authentication">
+    <classes>     
+      <class name="testCases.Authentication"/>
+      </classes>
+      </test>
+      
+      <test name="Testing Main Page">
+      <classes>
+      <class name="testCases.MainPage"/>
+      </classes>
+      </test>
+      
+      <test name="Testing BasketAndCheckout">
+      <classes>
+      <class name="testCases.BasketAndCheckout"/>
+      </classes>
+      </test> 
+      
+            
+      <test name="Testing ItemPage">
+      <classes>
+      <class name="testCases.ItemPage"/>
+      </classes>
+      </test> 
+  
+  
+  <!-- Test -->
+</suite> <!-- Suite -->
+
+
+

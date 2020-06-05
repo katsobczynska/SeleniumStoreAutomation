@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-06-05T14:35:47 CEST" name="Default suite" finished-at="2020-06-05T14:36:06 CEST" duration-ms="19373">
+    <groups>
+    </groups>
+    <test started-at="2020-06-05T14:35:47 CEST" name="Default test" finished-at="2020-06-05T14:36:06 CEST" duration-ms="19373">
+      <class name="testCases.Authentication">
+        <test-method is-config="true" signature="initialize()[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:47 CEST" name="initialize" finished-at="2020-06-05T14:35:52 CEST" duration-ms="4774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method signature="NegativeScenario1LoginWithInvalidUsername(java.lang.String, java.lang.String)[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:52 CEST" name="NegativeScenario1LoginWithInvalidUsername" data-provider="getInvalidUsername" finished-at="2020-06-05T14:35:54 CEST" duration-ms="2034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario1LoginWithInvalidUsername -->
+        <test-method signature="NegativeScenario2LoginWithInvalidPassword(java.lang.String, java.lang.String)[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:54 CEST" name="NegativeScenario2LoginWithInvalidPassword" data-provider="getInvalidPassword" finished-at="2020-06-05T14:35:54 CEST" duration-ms="329" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario2LoginWithInvalidPassword -->
+        <test-method signature="NegativeScenario3LoginWithInvalidUsernameAndPassword(java.lang.String, java.lang.String)[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:54 CEST" name="NegativeScenario3LoginWithInvalidUsernameAndPassword" data-provider="getInvalidUsernameAndPassword" finished-at="2020-06-05T14:35:55 CEST" duration-ms="317" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invaliduser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario3LoginWithInvalidUsernameAndPassword -->
+        <test-method signature="NegativeScenario4LeaveUsernameBlank()[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:55 CEST" name="NegativeScenario4LeaveUsernameBlank" finished-at="2020-06-05T14:35:55 CEST" duration-ms="230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario4LeaveUsernameBlank -->
+        <test-method signature="NegativeScenario5LeavePasswordBlank()[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:55 CEST" name="NegativeScenario5LeavePasswordBlank" finished-at="2020-06-05T14:35:55 CEST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario5LeavePasswordBlank -->
+        <test-method signature="NegativeScenario6LeaveBothBlank()[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:55 CEST" name="NegativeScenario6LeaveBothBlank" finished-at="2020-06-05T14:35:55 CEST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario6LeaveBothBlank -->
+        <test-method signature="NegativeScenario7LockedUser(java.lang.String, java.lang.String)[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:55 CEST" name="NegativeScenario7LockedUser" data-provider="getBlockedUser" finished-at="2020-06-05T14:35:55 CEST" duration-ms="307" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[locked_out_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NegativeScenario7LockedUser -->
+        <test-method signature="PositiveScenario1LoginWithValidUsernameAndPassword(java.lang.String, java.lang.String)[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:35:55 CEST" name="PositiveScenario1LoginWithValidUsernameAndPassword" data-provider="getValidUser" finished-at="2020-06-05T14:36:06 CEST" duration-ms="10588" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[standard_user]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secret_sauce]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PositiveScenario1LoginWithValidUsernameAndPassword -->
+        <test-method signature="PositiveScenario2LogOut()[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:36:06 CEST" name="PositiveScenario2LogOut" finished-at="2020-06-05T14:36:06 CEST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PositiveScenario2LogOut -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.Authentication@6f96c77]" started-at="2020-06-05T14:36:06 CEST" name="teardown" finished-at="2020-06-05T14:36:06 CEST" duration-ms="61" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- testCases.Authentication -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
